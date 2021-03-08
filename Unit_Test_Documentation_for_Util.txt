@@ -1,0 +1,26 @@
+UNIT TESTING DOCUMENTATION
+--------------------------------
+Author: Sharon Fitzpatrick
+
+Necessary Files:
+	+ app.js		 -main program file
+	+ util.js		 -holds Create_IMDB_URL() and CreateUrl()
+
+Necessary Folders:
+	+ test 		-tests need to be in the test folder in order to be found by mocha
+
+*Contents of test:
+	+ util.test.js	-contains the unit tests for Create_IMDB_URL() and CreateUrl()
+
+Steps To Start Unit Testing
+1. In terminal run: NPM i mocha chai --save-dev          //this saves them as developer dependenies in the package.json
+
+2. Modify the package.json script variable to look like:
+ "scripts": {
+    "test": "mocha"
+  }
+
+  This will allow you to use npm run test later.
+
+3.In terminal run: npm run test
+This will run your unit tests
